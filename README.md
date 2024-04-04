@@ -1,19 +1,23 @@
-# Swap Programı
-Bu basit Java programı, kullanıcıdan alınan iki sayının değerlerini takas eder.
+# Sayı Değiştirme Programı
+Bu program, kullanıcının girdiği iki sayıyı birbirleriyle değiştirir. Kullanıcıdan ilk ve ikinci sayıyı girmesi istenir, ardından bu sayılar birbirleriyle değiştirilir ve sonuçlar ekrana yazdırılır.
 
-## Kullanım
+## Nasıl Çalıştırılır
+1. Bu Java programını bilgisayarınıza indirin.
+2. Bir Java derleyicisi kullanarak programı derleyin (örneğin, `javac Swap.java`).
+3. Programı çalıştırın (`java Swap`).
+4. Program size sırasıyla iki sayı girmenizi isteyecek.
+5. İki sayıyı girdikten sonra, program bu sayıları birbirleriyle değiştirecek ve sonuçları ekrana yazdıracaktır.
 
-1. Programı çalıştırdığınızda, size iki sayı girmeniz istenir.
-2. İlk sayıyı girin ve enter tuşuna basın.
-3. İkinci sayıyı girin ve enter tuşuna basın.
-4. Program, girilen sayıların değerlerini takas eder ve sonucu ekrana yazdırır.
-
-## Örnek
+## Örnek Kullanım
 ```
-Lütfen ilk sayıyı giriniz:
-5
-Lütfen ikinci sayıyı giriniz:
-8
-ilk sayı: 8
+$ java Swap
+Lütfen ilk sayıyı giriniz: 5
+Lütfen ikinci sayıyı giriniz: 10
+ilk sayı: 10
 ikinci sayı: 5
 ```
+
+## Açıklama
+Bu program, iki sayıyı birbirleriyle değiştirmek için geçici bir değişken kullanır. İlk sayıyı geçici değişkene atar, sonra ilk sayıya ikinci sayının değerini, ikinci sayıya da geçici değişkenin değerini atar.
+
+Bu README dosyası, projenin amacını, nasıl kullanılacağını, örnek kullanımı ve lisans bilgilerini içerir. Umarım işinize yarar!
