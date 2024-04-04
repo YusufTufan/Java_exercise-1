@@ -1,20 +1,20 @@
-import java.util.Scanner;
+import java.util.Scanner; // Scanner importu
 public class Swap {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // Scannerı kullanmak için yazılması gereken satır
 
-        System.out.println("Lütfen ilk sayıyı giriniz:");
-        int sayi1 = scanner.nextInt();
-        System.out.println("Lütfen ikinci sayıyı giriniz:");
-        int sayi2 = scanner.nextInt();
+        System.out.println("Lütfen ilk sayıyı giriniz:"); //istenilen ilk sayı
+        int number1 = scanner.nextInt();
+        System.out.println("Lütfen ikinci sayıyı giriniz:"); //istenilen ikinci sayı
+        int number2 = scanner.nextInt();
 
-        int gecici = 0;
+        int gecici;          // swap ortamını sağlayan değişken
+        gecici = number1;    //sayı1 ve gecici aynı sayı oldular.
+        number1 = number2;   // sayı2 ve sayı1 aynı sayı oldular ancak sayı1 in değeri gecici değişkende
+        number2 = gecici;    // gecicideki değer sayı2 ye atanıyor. sayı1 inde bir öceki satırda sayı2 değeriyle değişti
 
-        gecici = sayi1;
-        sayi1 = sayi2;
-        sayi2 = gecici;
-
-        System.out.println("ilk sayı:"+ sayi1);
-        System.out.println("ikinci sayı:"+sayi2);
+        System.out.println("ilk sayı:" + number1);    //sayı1 yazdır.
+        System.out.println("ikinci sayı:" + number2); //sayı2 yazdır.
+        scanner.close(); //Scannerı sonlandır.
     }
 }
